@@ -50,4 +50,7 @@ document.getElementById('discount-btn').addEventListener('click', function(){
     savingAmount.innerText = discount;
     const rBalance = document.getElementById('balance');
     rBalance.innerText = (parseInt(remainingBalance) - parseInt(discount)); 
+    if (rBalance.innerText < savingAmount) {
+    alert('ay bujhe bey koro boka choda')
+}
 })
