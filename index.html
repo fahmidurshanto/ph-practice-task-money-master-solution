@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-4xl font-bold my-10 text-center">Money Master 💰</h1>
+
+    <section class="grid md:grid-cols-2 lg:grid-cols-2 container">
+        <div class="money-photo mx-10">
+            <img src="images/money.jpg" alt="" srcset="">
+        </div>
+        <div class="money-details container mx-auto">
+            <h3 class="text-3xl text-center mt-10 me-5">Income</h3>
+            <p class="text-center my-3">Income: <input type="text" class="text-center p-3 rounded-lg" id="income">  </p>
+
+            <h3 class="text-3xl text-center mt-10 me-5">Expenses</h3>
+
+            <p class="text-center my-3">Food:   <input  id="food" type="text" class="text-center p-3 rounded-lg">  </p>
+
+            <p class="text-center my-3">Rent:   <input id="rent"
+                type="text" class="text-center p-3 rounded-lg">  </p>
+
+            <p class="text-center my-3">Cloth: <input id="cloth" type="text" class="text-center p-3 rounded-lg">  </p>
+
+        <p class="text-center my-10"><button id="calculate-btn" class="btn btn-active btn-accent text-center">Button</button></p>
+
+        <h3 class="text-3xl text-center my-10">Total Expenses: <span id="total-expenses">0</span></h3>
+
+        <h3 class="text-3xl text-center my-10">Remaining Balance:  <span id="remaining-balance">0</span></h3>
+
+        <p class="text-center my-10">Save:  <input type="text" class="text-center py-3 rounded-lg" id="discount-field">  %  <button id="discount-btn" class="btn btn-active btn-accent text-center">Save</button></p>
+
+        <h3 class="text-3xl text-center my-10">Saving Amount: <span id="saving-amount" >0</span></h3>
+        <h3 class="text-3xl text-center my-10">Balance: <span id="balance">0</span></h3>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
